@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: green;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color:black;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 700px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+
+        </style>
+</head>
+<body>
+    <ul>
+        <li style="padding-right: 10%;"><a href="#home"><b>ABC <br>shop</b></a></li>
+        <li style="padding-right: 5%;"><a href="#news">Home</a></li>
+        <li style="padding-right: 5%;"><a href="#contact">Sales</a></li>
+        <li style="padding-right: 5%;"><a href="#news">Discound</a></li>
+        <li style="padding-right: 5%;"><a href="#contact">Vendor</a></li>
+        <li style="padding-right: 5%;"><a href="#news">Purchase</a></li>
+        <li style="padding-right: 5%;"><a href="#contact">Category</a></li>
+        <li style="padding-right: 5%;"><a href="#news">Brand</a></li>
+        <p style="float: right; width: 130px"><button type="submit" class="msgBtn" onClick="return false;" >Login</button></p>
+        <p style ="float: right; width: 130px"><button type="submit" class="msgBtn2" onClick="return false;">Logout</button></p>
+      </ul><br>
+
+      <div class="row">
+        <div class="column" style="background-color:#aaa;">
+         <fieldset>
+              <legend></legend>
+              <label for="fname">Barcoad:</label><br>
+              <input style="width: 100%;
+              padding: 12px 20px;
+              margin: 2px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;" type="text" id="fname" name="fname"><br><br>
+              <label for="lname">product name:</label><br>
+              <input style="width: 100%;
+              padding: 12px 20px;
+              margin: 2px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;" type="text" id="lname" name="lname"><br><br>
+              <label for="email">Price:</label><br>
+              <input style="width: 100%;
+              padding: 12px 20px;
+              margin: 2px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;" type="email" id="email" name="email"><br><br>
+              <label for="name">Discound Name:</label><br>
+              <input style="width: 100%;
+              padding: 12px 20px;
+              margin: 2px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;" type="text" id="name" name="name"><br><br>
+              <label for="birthday">Amound:</label><br>
+              <input style="width: 100%;
+              padding: 12px 20px;
+              margin: 2px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;" type="email" id="email" name="email"><br><br>
+              <label for="birthday">Discound Type:</label><br>
+              <input style="width: 100%;
+              padding: 12px 20px;
+              margin: 2px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;" type="text" id="name" name="name"><br><br>
+              <label for="fname">Calculate amound:</label><br>
+              <input style="width: 100%;
+              padding: 12px 20px;
+              margin: 2px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;" type="text" id="fname" name="fname"><br><br>
+              <input style="color: rgb(240, 230, 230); background-color: red; float: right;" type="reset" value="reset">
+              <input style="color: white; background-color: green; float: right;" type="submit" value="save" >
+            </fieldset>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <h2>Column 2</h2>
+          <p>Some text..</p>
+        </div>
+      </div>
+
+</body>
